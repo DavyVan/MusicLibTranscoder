@@ -1,0 +1,11 @@
+name: musiclibtranscoder
+services:
+  golang:
+    image: golang:latest
+    entrypoint:
+      - sleep
+      - infinity
+    volumes:
+      - .:/MusicLibTranscoder:rw
+      - E:/Favourite Music:/FM:rw
+      - E:/AAC_GO:/AAC:rw
